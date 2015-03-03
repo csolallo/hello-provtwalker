@@ -1,3 +1,3 @@
 ## hello-provtwalker
 
-Smoke testing github account and prov setp.
+Smoke testing github account and prov setup.

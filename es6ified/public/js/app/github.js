@@ -1,4 +1,4 @@
-export default function($http){
+export default function github ($http){
   return {
 
     getUser(username){
@@ -16,3 +16,5 @@ export default function($http){
     }
   }
 }
+
+github.$inject = ['$http']

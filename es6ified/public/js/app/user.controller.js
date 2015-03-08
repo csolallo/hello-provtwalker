@@ -1,5 +1,5 @@
 class UserController {
-  
+
   constructor($scope, github, $routeParams) {
     var onUserComplete = function(data) {
       $scope.user = data;
@@ -19,5 +19,6 @@ class UserController {
     github.getUser($scope.username).then(onUserComplete, onError);
   }
 }
+UserController.$inject = ['$scope', 'github', '$routeParams']
 
 export default UserController;

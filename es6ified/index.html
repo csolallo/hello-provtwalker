@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>es6ified</title>
+    <base href="/" />
+    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Source+Sans+Pro'>
+    <link rel="stylesheet" href="/dist/css/style.css">
+    <script src="/js/jspm_packages/system.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/dist/js/app-built-dev.js"></script>
+  </head>
+  <body>
+    <h1>es6ified</h1>
+    <article ng-view></article>
+    <script>
+      System.import('app/main').then(function(app){
+        window.app = app.bootstrap(document.body);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+{
+  "name": "es6ified",
+  "version": "0.0.2",
+  "description": "A hello world application for angular in es6",
+  "main": "server.js",
+  "scripts": {
+    "postinstall": "jspm install",
+    "start": "node server.js",
+    "build": "npm run bundle -s && npm run build:css -s",
+    "bundle": "npm run bundle:dev -s && npm run bundle:prod -s",
+    "bundle:dev": "jspm bundle app/main public/dist/js/app-built-dev.js",
+    "bundle:prod": "jspm bundle app/main public/dist/js/app-built-prod.js --minify",
+    "build:css": "stylus public/css/style.styl -m --include node_modules/nib/lib --out public/dist/css",
+    "watch:js": "watch 'npm run bundle:dev -s' public/js/app",
+    "watch:css": "watch 'npm run build:css -s' public/css",
+    "build:watch": "parallelshell 'npm run watch:js -s' 'npm run watch:css -s'",
+    "lint": "jshint --reporter node_modules/jshint-stylish/stylish.js public/js/app/",
+    "livereload": "livereload public/dist/",
+    "clean": "rimraf public/js/jspm_packages public/dist/**/*",
+    "dev": "parallelshell 'npm start -s' 'npm run livereload -s' 'npm run watch:js -s' 'npm run watch:css -s'"
+  },
+  "keywords": [
+    "es6",
+    "angular"
+  ],
+  "author": "twalker",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^4.7.3",
+    "jspm": "^0.14.0",
+    "jshint": "^2.6.0",
+    "jshint-stylish": "^1.0.0",
+    "livereload": "^0.3.6",
+    "nib": "^1.1.0",
+    "parallelshell": "^1.0.4",
+    "rimraf": "^2.2.8",
+    "stylus": "^0.50.0",
+    "watch": "^0.14.0"
+  },
+  "dependencies": {
+    "express": "^4.11.2"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "public/js",
+      "lib": "public/js/app"
+    },
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.3.13",
+      "angular-route": "github:angular/bower-angular-route@^1.3.13"
+    }
+  }
+}

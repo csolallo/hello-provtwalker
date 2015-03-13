@@ -1,0 +1,15 @@
+{
+  "name": "minimal-minify",
+  "scripts": {
+    "bundle": "jspm bundle --minify app/main app-built.js"
+  },
+  "devDependencies": {
+    "jspm": "^0.14.0"
+  },
+  "jspm": {
+    "directories": {
+      "lib": "app",
+      "packages": "jspm_packages"
+    }
+  }
+}

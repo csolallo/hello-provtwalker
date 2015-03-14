@@ -1,20 +1,17 @@
 <!doctype html>
 <html>
   <head>
-    <title>es6ified</title>
+    <title>minimum-minify</title>
     <script src="/app-built.js"></script>
-
   </head>
   <body>
     <h1>minimum-minify</h1>
-    <!--
-    <script>
-      System.import('app/main').then(function(){
-        ['a', 'b', 'c'].forEach(function(global){
-          console.log(global + ':' + window[global])
-        });
-      });
-    </script>
-  -->
+    <ul>
+      <li>traces and orders dependencies</li>
+      <li>minifies</li>
+      <li>creates a <a href="https://github.com/jspm/jspm-cli/wiki/Production-Workflows#creating-a-self-executing-bundle">self-executing</a> bundle</li>
+      <li>generates a sourcemap</li>
+      <li>opt-in ES6 transpilation with "format es6";</li>
+    </ul>
   </body>
 </html>

@@ -1,22 +1,17 @@
 # minimum-minify
 
-A minimum implementation of using jspm solely for generating and bundling a dependency tree of global modules.
+A minimum implementation of using [jspm](http://jspm.io/) solely for generating and bundling a dependency tree of global modules.
 
 ## installation
 
 ```bash
 npm install  
-npm run bundle  
+npm run bundle # or npm run bundle:no-minify
 serve .
 ```
 
-## Notes:
 
-- creates a [self-executing bundle](https://github.com/jspm/jspm-cli/wiki/Production-Workflows#creating-a-self-executing-bundle)
-- orders dependencies
-- minification (with sourcemaps)
+## To illustrate
 
-
-## TODO
-
-- demo `jspm install angular` or other external dependency
+- all features listed in index.html
+- `jspm install angular` or other external dependency

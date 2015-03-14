@@ -1,5 +1,5 @@
 {
-  "name": "minimal-minify",
+  "name": "minimum-minify",
   "scripts": {
     "bundle": "jspm bundle --minify app/main app-built.js"
   },
@@ -10,6 +10,9 @@
     "directories": {
       "lib": "app",
       "packages": "jspm_packages"
+    },
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.3.14"
     }
   }
 }

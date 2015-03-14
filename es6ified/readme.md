@@ -11,6 +11,14 @@ A proof of concept for writing angular 1.3.x in ES6 (ECMAScript 2015).
 
 All these tools are optional, but this suite works well together.
 
+## installation
+
+```bash
+npm install  
+npm run build  
+npm run dev
+```
+
 ## Misc notes
 
 - 125k+ npm packages become available.
@@ -22,6 +30,8 @@ All these tools are optional, but this suite works well together.
 
 - example of a unit test with karma
 - example of a e2e test with protractor
+- pass in NODE_ENV to toggle production script in view
+
 
 ### es6 with angular articles:
 

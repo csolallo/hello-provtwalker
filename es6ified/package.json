@@ -6,6 +6,7 @@
   "scripts": {
     "postinstall": "jspm install",
     "start": "node server.js",
+    "test": "karma start",
     "build": "npm run bundle -s && npm run build:css -s",
     "bundle": "npm run bundle:dev -s && npm run bundle:prod -s",
     "bundle:dev": "jspm bundle app/main public/dist/js/app-built-dev.js",
@@ -27,9 +28,14 @@
   "license": "MIT",
   "devDependencies": {
     "babel": "^4.7.3",
+    "jasmine-core": "^2.2.0",
     "jshint": "^2.6.0",
     "jshint-stylish": "^1.0.0",
     "jspm": "^0.14.0",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-cli": "0.0.4",
+    "karma-jasmine": "^0.3.5",
     "livereload": "^0.3.6",
     "nib": "^1.1.0",
     "parallelshell": "^1.0.4",

@@ -12,8 +12,12 @@ System.config({
 System.config({
   "map": {
     "angular": "github:angular/bower-angular@1.3.14",
+    "angular-mocks": "github:angular/bower-angular-mocks@1.3.14",
     "angular-route": "github:angular/bower-angular-route@1.3.14",
     "text": "github:systemjs/plugin-text@0.0.2",
+    "github:angular/bower-angular-mocks@1.3.14": {
+      "angular": "github:angular/bower-angular@1.3.14"
+    },
     "github:angular/bower-angular-route@1.3.14": {
       "angular": "github:angular/bower-angular@1.3.14"
     }

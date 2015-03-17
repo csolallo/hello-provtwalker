@@ -1,0 +1,32 @@
+{
+	"id": "64889c38-8bb8-840a-9ebc-c11b874532c6",
+	"name": "gits",
+	"requests": [
+		{
+			"id": "1a4bdc32-50b7-f536-3768-82265f92208a",
+			"headers": "Accept: application/json\n",
+			"url": "https://api.github.com/users/twalker",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "64889c38-8bb8-840a-9ebc-c11b874532c6",
+			"data": [],
+			"dataMode": "params",
+			"name": "user",
+			"description": "gets the user",
+			"descriptionFormat": "html",
+			"time": 1426379782327,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"synced": false
+		}
+	],
+	"order": [
+		"1a4bdc32-50b7-f536-3768-82265f92208a"
+	],
+	"timestamp": 1426379782329,
+	"synced": false
+}

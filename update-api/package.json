@@ -1,0 +1,19 @@
+{
+  "name": "update-api",
+  "description": "updates responses from api",
+  "author": "provtwalker",
+  "version": "0.0.1",
+  "main": "bin/update-api.js",
+  "preferGlobal": "true",
+  "bin": {
+    "update-api": "bin/update-api.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "commander": "^2.7.1",
+    "json5": "^0.4.0",
+    "newman": "^1.2.14"
+  }
+}

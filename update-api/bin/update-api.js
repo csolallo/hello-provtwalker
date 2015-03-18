@@ -32,7 +32,7 @@ var collectionJson = JSON5.parse(fs.readFileSync(program.args[0], 'utf8'));
 // console.log(collectionJson)
 
 var callback = function(){
-  console.log('newman done callback fired')
+  console.log('newman done callback fired', arguments[0])
 }
 
 // Optional Callback function which will be executed once Newman is done executing all its tasks.

@@ -14,6 +14,7 @@
   "dependencies": {
     "commander": "^2.7.1",
     "json5": "^0.4.0",
-    "newman": "^1.2.14"
+    "newman": "^1.2.14",
+    "swagger-suite": "0.0.8"
   }
 }

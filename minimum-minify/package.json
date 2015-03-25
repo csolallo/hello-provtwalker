@@ -1,8 +1,8 @@
 {
   "name": "minimal-minify",
   "scripts": {
-    "bundle": "jspm bundle-sfx --minify app/main app-built.js",
-    "bundle:no-minify": "jspm bundle-sfx app/main app-built.js"
+    "bundle": "jspm bundle-sfx app/main app-built.js",
+    "bundle:minify": "jspm bundle-sfx --minify app/main app-built.js"
   },
   "devDependencies": {
     "jspm": "^0.14.0"

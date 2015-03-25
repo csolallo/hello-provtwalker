@@ -6,7 +6,7 @@ A minimum implementation of using [jspm](http://jspm.io/) solely for generating 
 
 ```bash
 npm install  
-npm run bundle # or npm run bundle:no-minify
+npm run bundle # or npm run bundle:minify
 serve .
 ```
 

@@ -21,6 +21,7 @@
   "node": true,
   "devel": true,
   "mocha": true,
+  "jasmine": true,
   "esnext": true,
   "globals": {
     "System": true

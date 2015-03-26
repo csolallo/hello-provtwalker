@@ -16,7 +16,7 @@
     "watch:css": "watch 'npm run build:css -s' public/css",
     "build:watch": "parallelshell 'npm run watch:js -s' 'npm run watch:css -s'",
     "lint": "jshint --reporter node_modules/jshint-stylish/stylish.js public/js/app/",
-    "livereload": "livereload public/dist/",
+    "livereload": "livereload public/dist/ -i 200",
     "clean": "rimraf public/js/jspm_packages public/dist/**/*",
     "dev": "parallelshell 'npm start -s' 'npm run livereload -s' 'npm run watch:js -s' 'npm run watch:css -s'"
   },

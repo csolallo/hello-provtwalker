@@ -19,6 +19,7 @@ app.factory('github', github);
 app.config(routes);
 
 export function bootstrap(el){
+  console.log('bootstrapping angular')
   angular.bootstrap(el, [app.name]);
   return app;
 }

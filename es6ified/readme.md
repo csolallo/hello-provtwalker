@@ -26,15 +26,25 @@ npm run dev
 - can be awkward mix/match between `import` on `$inject`
 - pushState is much prettier than hashbang.
 
-## TODO
-
-- example of a unit test with karma
-- example of a e2e test with protractor
-- pass in NODE_ENV to toggle production script in view
-
 
 ### es6 with angular articles:
 
 - http://martinmicunda.com/2015/02/09/how-to-start-writing-apps-with-es6-angular-1x-and-jspm/
 - https://gocardless.com/blog/es6-angular/
 - http://blog.thoughtram.io/angularjs/es6/2015/01/23/exploring-angular-1.3-using-es6.html
+
+-------------------------------
+
+## POC Follow up
+
+### TODO
+
+- unit test using ngMock (httpBackend, injector)
+- unit test of a directive
+- try karma coverage w/dev bundle (Ryan can help)
+- test in IE9 (it's required)
+
+### Nice to have
+
+- example of a e2e test with protractor
+- pass in NODE_ENV to toggle production script in view

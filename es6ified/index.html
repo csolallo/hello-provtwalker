@@ -2,6 +2,15 @@
 <html>
   <head>
     <title>es6ified</title>
+    <!--[if IE 9 ]>
+        <script src="//jpillora.com/xdomain/dist/xdomain.min.js"></script>
+        <script>
+          xdomain.slaves({
+            'http://localhost:3001': '/proxy.html'
+          });
+         </script>
+    <![endif]-->
+
     <!-- pushstate in Angular requires a baseUrl -->
     <base href="/" />
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Source+Sans+Pro'>

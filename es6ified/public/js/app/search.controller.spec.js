@@ -19,7 +19,6 @@ describe('SearchController', function() {
   //beforeEach(module('es6ified'));
 
   it('should be created successfully', function() {
-    console.log('hello', controller)
     expect(controller).toBeDefined();
   });
 });

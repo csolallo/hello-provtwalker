@@ -1,0 +1,10 @@
+<aside class="avatar" ng-click="showDetails()">
+  <img src="{{user.avatar_url}}" title="{{user.name}}" />
+  <dl>
+    <dt>{{user.name}}</dt>
+    <dd>{{user.company}}</dd>
+    <dd>{{user.location}}</dd>
+    <dd>repos: {{user.public_repos}}</dd>
+    <dd>followers: {{user.followers | number}}</dd>
+  </dl>
+</aside>

@@ -3,6 +3,7 @@ import routes from './routes.config'
 import SearchController from './search.controller'
 import UserController from './user.controller'
 import github from './github'
+import avatar from './avatar.directive'
 
 var app = angular.module('es6ified', ['ngRoute']);
 
@@ -15,6 +16,8 @@ app.controller('SearchController', SearchController)
 app.controller('UserController', UserController)
 
 app.factory('github', github);
+
+app.directive('avatar', avatar);
 
 app.config(routes);
 

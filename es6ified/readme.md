@@ -39,11 +39,18 @@ npm run dev
 
 ### TODO
 
-- [ ] unit test using ngMock (httpBackend, injector)
+- [x] unit test using ngMock (httpBackend, injector)
 - [ ] unit test of a directive
+- [ ] unit test of a controller
 - [ ] try karma coverage w/dev bundle (Ryan can help)
 - [x] test in IE9
     + needed to add xdomain to emulate CORS.
+
+### REVISIT
+
+- Karma config needed to be in js root url.
+- Karma paths forced me to move `dist` folder into `js` and `css` folders.
+
 
 ### Nice to have
 

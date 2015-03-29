@@ -40,7 +40,7 @@ npm run dev
 ### TODO
 
 - [x] unit test using ngMock (httpBackend, injector)
-- [ ] unit test of a directive
+- [x] unit test of a directive
 - [ ] unit test of a controller
 - [ ] try karma coverage w/dev bundle (Ryan can help)
 - [x] test in IE9
@@ -48,8 +48,9 @@ npm run dev
 
 ### REVISIT
 
-- Karma config needed to be in js root url.
+- Karma config needed to be in js root url--[some info](https://github.com/rolaveric/karma-systemjs/issues/8).
 - Karma paths forced me to move `dist` folder into `js` and `css` folders.
+- Coverage not handling multiple source files--[see issue](https://github.com/Workiva/karma-jspm/issues/22)
 
 
 ### Nice to have

@@ -41,7 +41,7 @@ npm run dev
 
 - [x] unit test using ngMock (httpBackend, injector)
 - [x] unit test of a directive
-- [ ] unit test of a controller
+- [x] unit test of a controller
 - [ ] try karma coverage w/dev bundle (Ryan can help)
 - [x] test in IE9
     + needed to add xdomain to emulate CORS.
